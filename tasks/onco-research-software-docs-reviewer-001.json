@@ -1,0 +1,32 @@
+{
+  "id": "onco-research-software-docs-reviewer-001",
+  "title": "Name/secure the License + Data-provenance reviewer (blocking gate role)",
+  "project": "onco-research-software-docs",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "governance"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "This project contributes documentation, tests, and reproducible tutorials upstream to widely-used open-source cancer research software. Every contribution must pass a blocking gate covering two license axes (the tool's OSS license + contribution policy, and any example/tutorial data's license) plus the binding cancer-data guardrail (open-access/aggregate/de-identified only; no controlled-access or patient-identifiable data; COSMIC/OncoKB content never embedded) and a no-medical-advice check. That gate cannot run without a qualified reviewer, so this role must be filled before the M0 pilot is reviewed.",
+  "objective": "Appoint a named License + Data-provenance reviewer (or a rotation of at least two) qualified to read OSS licenses and CLA/DCO terms and to apply the cancer-data guardrail, and record the appointment and rotation rule.",
+  "acceptanceCriteria": [
+    "A named reviewer (or >= 2 in rotation) is appointed who can read SPDX/OSS licenses (MIT/BSD/Apache/GPL/LGPL/AGPL/MPL), assess CLA vs. DCO terms, and apply the cancer-data guardrail (open-access tiers, de-identification, COSMIC/OncoKB non-commercial restrictions).",
+    "The appointment records each reviewer's name and relevant qualification.",
+    "A rotation rule is documented requiring at least one qualified reviewer to be present at all times, or triage and contribution work halts.",
+    "It is recorded that until the role is filled, all project tasks remain verifiedNeed:false and no contribution may pass the gate."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\onco-research-software-docs\\PLAN.md",
+    "C:\\code\\elyos\\docs\\good-deed-definition.md",
+    "C:\\code\\elyos\\planning\\ROADMAP.md",
+    "SPDX license list; OSI-approved license list; Developer Certificate of Origin (DCO)"
+  ],
+  "output": "A committed appointment record naming the License + Data-provenance reviewer(s), their qualifications, and the rotation rule, unblocking the gate (gate-002) and the M0 pilot review.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
