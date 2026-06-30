@@ -1,0 +1,37 @@
+{
+  "id": "onco-research-software-docs-contrib-013",
+  "title": "Contribution #4 — tutorial with a biological claim (Domain-reviewer path)",
+  "project": "onco-research-software-docs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "reproducibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Some tutorials for cancer research tools necessarily include a biological or clinical claim — for example, explaining what a mutational signature implies about cancer etiology, or what a differential-expression result means biologically. Such claims require domain-expert verification (bioinformatician; oncologist if clinical context) to ensure they are accurate and do not constitute medical advice. This is the first task in the project to exercise the Domain-reviewer path, elevating riskTier to medium. Depends on pilot-007, triage-009, and repro-004.",
+  "objective": "Author and contribute a merged tutorial for a gate-passed tool that includes at least one biological/clinical claim, following the Domain-reviewer path: every assertion cited, Domain reviewer sign-off obtained, 'not medical advice' disclaimer present, and tutorial runs reproducibly in CI.",
+  "acceptanceCriteria": [
+    "Target tool has a PASS gate artifact from triage-009 confirming OSI-permissive license and cancer-data guardrail clearance; example data is shipped/synthetic or verified open-access.",
+    "Issue-first alignment confirmed with the maintainer before authoring.",
+    "Every biological or clinical assertion in the tutorial carries an inline citation to a primary or authoritative source; no assertion ships without provenance.",
+    "riskTier is medium; the mandatory 'research/education use — not medical advice' disclaimer is present and prominent.",
+    "Domain reviewer (credentialed bioinformatician; oncologist where clinical context appears) sign-off obtained confirming accuracy and absence of medical advice.",
+    "License + Data-provenance reviewer sign-off and Technical reviewer sign-off obtained.",
+    "Tutorial runs reproducibly in CI from the pinned environment (reproEnv.ciRunRef recorded).",
+    "Contribution merged upstream; outcome artifact committed at outcomes/onco-research-software-docs-contrib-013.json with merge-commit URL and coverage before/after."
+  ],
+  "resources": [
+    "PLAN.md — Per-contribution pipeline",
+    "PLAN.md — Domain reviewer path (medium-risk section)",
+    "TASKS.md — contrib-013 acceptance criteria",
+    "Gate artifacts from triage-009",
+    "Templates (template-003 output)",
+    "Reproducible-environment harness (repro-004 output)"
+  ],
+  "output": "A tutorial with biological claims merged upstream for a gate-passed tool, with Domain reviewer sign-off, 'not medical advice' disclaimer, reproducible CI run, and outcome artifact recorded — exercising the full Domain-reviewer path for the first time.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false
+}

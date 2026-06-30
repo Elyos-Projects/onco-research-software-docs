@@ -1,0 +1,33 @@
+{
+  "id": "onco-research-software-docs-reuse-018",
+  "title": "Track and verify external reuse events",
+  "project": "onco-research-software-docs",
+  "type": "research",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "governance"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The project's M3 success metric requires at least three verifiable external reuse events — a tutorial cited in a paper, forked with activity, linked from official docs, or referenced in an upstream issue. Self-reported reuse does not count; only externally verifiable evidence (URL, DOI, commit) qualifies. Depends on contributions from M1 and M2 (contrib-011, contrib-013, contrib-015) having been delivered and given time to accumulate reuse signals.",
+  "objective": "Identify, document, and commit at least three externally verifiable reuse events for delivered contributions, with evidence linking to externally accessible sources (citation URL, fork URL, docs link, issue URL).",
+  "acceptanceCriteria": [
+    "At least three verifiable external reuse events are recorded: e.g., a tutorial cited in a publication (DOI/URL), a fork with activity referencing our contribution, our docs linked from the tool's official documentation, or an upstream issue referencing our tutorial.",
+    "Each event links to externally verifiable evidence — no self-report; the evidence URL/DOI/commit must be independently accessible.",
+    "Reuse events are committed as a document in the outcome ledger.",
+    "Steward reviews and confirms each event meets the 'externally verifiable' bar.",
+    "The document feeds into the M3 Definition of Done metric."
+  ],
+  "resources": [
+    "PLAN.md — Attribution of outcomes section",
+    "PLAN.md — Success metrics (Verifiable external reuse row)",
+    "TASKS.md — reuse-018 acceptance criteria",
+    "Outcome artifacts from contrib-011, contrib-013, contrib-015"
+  ],
+  "output": "A committed reuse-events record with at least three externally verifiable evidence items (URL/DOI/commit), fulfilling the M3 reuse metric and demonstrating downstream beneficiary impact.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

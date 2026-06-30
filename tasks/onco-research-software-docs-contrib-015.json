@@ -1,0 +1,38 @@
+{
+  "id": "onco-research-software-docs-contrib-015",
+  "title": "Contribution #5 — imaging/pathology tool tutorial (open imaging)",
+  "project": "onco-research-software-docs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "digital-pathology"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Digital pathology and medical imaging tools for cancer research (cell segmentation, radiomics, nucleus detection) are among the most under-documented in the space. Imaging tutorials are riskTier medium because: (1) imaging data requires careful license and de-identification verification even for open tiers, and (2) any biological/clinical claim about what an image feature means requires domain-expert review. Data must be open imaging only — open-tier TCGA/CPTAC imaging or the tool's shipped sample images — with no controlled-access slides. Depends on harness-014 (imaging ecosystem support) and triage-009 (gate-passed imaging tool).",
+  "objective": "Author and contribute a merged imaging/pathology tool tutorial using open imaging data only, following the Domain-reviewer path, with the data's license and de-identification verified in the gate artifact, biological claims cited, and the tutorial running reproducibly in CI.",
+  "acceptanceCriteria": [
+    "Uses open imaging only: open-tier TCGA/CPTAC imaging or the tool's own shipped sample images; license and de-identification verified in the committed gate artifact; no controlled-access slides.",
+    "Target tool has a PASS gate artifact confirming OSI-permissive or copyleft license, acceptable contribution policy, and cancer-data guardrail clearance for the chosen imaging data.",
+    "Issue-first alignment confirmed with the maintainer before authoring.",
+    "Every biological or clinical assertion carries an inline citation; Domain reviewer (bioinformatician; oncologist where clinical context appears) sign-off obtained.",
+    "Mandatory 'research/education use — not medical advice' disclaimer present and prominent.",
+    "Tutorial runs reproducibly in CI from the pinned environment using the generalized harness (harness-014); reproEnv.ciRunRef recorded.",
+    "License + Data-provenance reviewer sign-off and Technical reviewer sign-off obtained.",
+    "Contribution merged upstream; outcome artifact committed at outcomes/onco-research-software-docs-contrib-015.json with merge-commit URL and coverage before/after."
+  ],
+  "resources": [
+    "PLAN.md — Per-contribution pipeline",
+    "PLAN.md — Axis 2 cancer data (open-tier TCGA/CPTAC imaging)",
+    "TASKS.md — contrib-015 acceptance criteria",
+    "Gate artifacts from triage-009",
+    "Templates (template-003 output)",
+    "Generalized repro harness (harness-014 output)",
+    "Open-tier GDC/TCGA imaging access documentation; CPTAC open imaging"
+  ],
+  "output": "An imaging/pathology tutorial merged upstream for a gate-passed tool, using open imaging data only, with Domain reviewer sign-off, reproducible CI run, and outcome artifact recorded — extending project coverage into the digital-pathology ecosystem.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false
+}

@@ -1,0 +1,33 @@
+{
+  "id": "onco-research-software-docs-outreach-006",
+  "title": "Issue-first upstream maintainer outreach + gap shortlist",
+  "project": "onco-research-software-docs",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "governance"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The project's 'delivered, not merged' bar requires that upstream maintainers accept contributions. Without prior issue-first alignment, contributions may be ignored, refused, or superseded. The project must never open uninvited large PRs. This task executes the issue-first outreach step for the pilot tool and produces a shortlist of maintainer-confirmed gaps, turning verifiedNeed from false to an alignment-confirmed state for the pilot. Depends on catalog-005 so the candidate pool is established before outreach targets are chosen.",
+  "objective": "Open issue-first threads with at least one upstream maintainer for a Priority A tool to confirm a specific documentation or test gap is wanted, document the maintainer's response, and produce a shortlist of confirmed or likely-accepted contributions for the pilot.",
+  "acceptanceCriteria": [
+    "At least one issue-first thread is opened with an upstream maintainer for a Priority A tool from the catalog (catalog-005), referencing a specific documentation or test gap.",
+    "The maintainer's response — or the gap evidence from existing 'good first issue' / 'docs wanted' labels — is documented with a URL or screenshot.",
+    "A shortlist of 1-3 specific confirmed or likely-accepted contributions is produced, each with: target tool, gap description, acceptance signal, and the contribution mechanism (PR flow, DCO/CLA, contributing guide URL).",
+    "The shortlist is committed as a document and feeds directly into the pilot (pilot-007).",
+    "Any tool where the maintainer indicates they do not want the contribution is excluded from the shortlist and the reason flagged."
+  ],
+  "resources": [
+    "PLAN.md — Per-contribution pipeline (step 2: Issue-first alignment)",
+    "PLAN.md — Risks & mitigations (contribution rejected/ignored row)",
+    "TASKS.md — outreach-006 task definition",
+    "Candidate-software catalog output (catalog-005)"
+  ],
+  "output": "A committed shortlist of 1-3 confirmed or likely-accepted upstream contribution opportunities, with maintainer-alignment evidence, directly feeding into the pilot end-to-end contribution (pilot-007).",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

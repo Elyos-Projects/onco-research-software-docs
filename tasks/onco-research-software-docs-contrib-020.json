@@ -1,0 +1,38 @@
+{
+  "id": "onco-research-software-docs-contrib-020",
+  "title": "Contributions #7 and #8 across new tools/ecosystems for breadth",
+  "project": "onco-research-software-docs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "reproducibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The M3 Definition of Done requires at least eight contributions merged cumulatively across at least four tools and at least three ecosystems (genomics, imaging, survival-stats). Contributions 1-6 cover the first three milestones; this task delivers contributions 7 and 8 across new tools or ecosystems not yet covered, achieving the breadth target. riskTier is medium because contributions spanning new ecosystems may include biological claims requiring Domain reviewer paths, and new tools may require nuanced data-handling decisions. Depends on harness-014 (multi-ecosystem support) and partner-010 (confirmed partner relationships).",
+  "objective": "Deliver two further contributions (#7 and #8) spanning new tools or ecosystems not yet covered by prior contributions, each gate-passed, reproducible in CI, merged upstream, and with outcome artifacts recorded — achieving at least three ecosystems covered cumulatively.",
+  "acceptanceCriteria": [
+    "Two contributions targeting new tools or ecosystems (not previously covered by contributions 1-6) are delivered and merged upstream.",
+    "Each contribution has a PASS gate artifact (both axes) committed before authoring begins.",
+    "Issue-first alignment confirmed with the maintainer for each contribution before authoring.",
+    "Any biological or clinical claim in either contribution carries an inline citation; Domain reviewer sign-off obtained where a biological claim is present.",
+    "Each tutorial/test runs reproducibly in CI from the pinned environment (harness-014); reproEnv.ciRunRef recorded.",
+    "License + Data-provenance reviewer sign-off and Technical reviewer sign-off obtained for each.",
+    "Outcome artifacts committed at outcomes/onco-research-software-docs-contrib-020-a.json and outcomes/onco-research-software-docs-contrib-020-b.json (or combined) with merge-commit URLs and coverage before/after.",
+    "After these contributions, the project covers at least three distinct ecosystems (genomics, imaging, survival-stats) cumulatively."
+  ],
+  "resources": [
+    "PLAN.md — Per-contribution pipeline",
+    "PLAN.md — Multi-ecosystem breadth target (M3 section)",
+    "TASKS.md — contrib-020 acceptance criteria",
+    "Gate artifacts from triage-009",
+    "Templates (template-003 output)",
+    "Generalized repro harness (harness-014 output)",
+    "Confirmed partner relationships (partner-010 output)"
+  ],
+  "output": "Two contributions merged upstream across new tools/ecosystems, with gate artifacts, reproducible CI runs, and outcome records committed, bringing the cumulative total to at least eight contributions across at least four tools and three ecosystems.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false
+}

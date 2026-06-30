@@ -1,0 +1,33 @@
+{
+  "id": "onco-research-software-docs-repro-004",
+  "title": "Reproducible environment recipe + CI harness that runs a tutorial",
+  "project": "onco-research-software-docs",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "reproducibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Cancer tools are notoriously version-sensitive, and tutorials that do not pin their environment become broken within months. This project requires every tutorial to ship a pinned environment (lockfile + optional container digest) and a CI workflow that recreates the environment and runs the tutorial end-to-end on shipped/synthetic data. Without this harness, 'CI green' is meaningless — linting without execution is not reproducibility. This task depends on template-003 so the environment-pin block in templates is consistent with the harness.",
+  "objective": "Build and commit a reproducible-environment recipe and CI harness that, given a tutorial's lockfile, recreates the environment on a clean machine and executes the tutorial end-to-end headlessly on shipped/synthetic data, recording the run reference in reproEnv.ciRunRef.",
+  "acceptanceCriteria": [
+    "Provides a pinned-environment recipe per ecosystem (conda-lock/pixi/renv.lock/hashed requirements) plus an optional container digest; 'reproducible' means a clean machine given only the lockfile runs the artifact to completion with recorded outputs.",
+    "A CI workflow recreates the environment and executes one tutorial/test end-to-end headlessly on shipped/synthetic data; the run reference is recorded in reproEnv.ciRunRef.",
+    "The harness code is MIT-licensed; pnpm build && pnpm test && pnpm lint are green for any Elyos-side tooling.",
+    "DCO signed-off commit.",
+    "At least one tutorial runs successfully through the harness end-to-end, demonstrating the approach works before the pilot contribution (pilot-007) depends on it."
+  ],
+  "resources": [
+    "PLAN.md — Reproducible-environment harness section",
+    "PLAN.md — Quality, review & risk gates",
+    "TASKS.md — repro-004 acceptance criteria",
+    "conda-lock documentation; pixi documentation; renv documentation; GitHub Actions documentation"
+  ],
+  "output": "A committed reproducible-environment harness (lockfile recipe + CI workflow) MIT-licensed, with evidence of at least one tutorial running end-to-end on shipped/synthetic data, enabling all subsequent tutorial and test contributions to claim genuine reproducibility.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

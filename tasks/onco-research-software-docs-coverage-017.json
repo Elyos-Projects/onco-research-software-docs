@@ -1,0 +1,34 @@
+{
+  "id": "onco-research-software-docs-coverage-017",
+  "title": "Record doc/test coverage before/after for 3 or more tools",
+  "project": "onco-research-software-docs",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "reproducibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The project's success metrics include 'tools with measurably improved doc/test coverage' — but this is only verifiable if before/after measurements are recorded consistently. This task collects and commits the coverage deltas for at least three tools across contributions contrib-011, contrib-012, and contrib-016, using the named ecosystem tooling (interrogate/pydocstyle for Python, roxygen/tools::undoc for R, line/branch coverage from CI). Without this, M2's Definition of Done ('measurable doc/test coverage improvement recorded for at least 3 tools') cannot be met.",
+  "objective": "Collect and commit doc-completeness and test-coverage deltas for at least three tools, using the named ecosystem tooling per tool, and store the before/after pairs in each contribution's gate/provenance artifact and in a summary document.",
+  "acceptanceCriteria": [
+    "Doc-completeness and/or test-coverage before/after pairs are recorded for at least three tools from contributions contrib-011, contrib-012, and contrib-016.",
+    "Each measurement uses the appropriate ecosystem tooling: interrogate or pydocstyle for Python; roxygen2 or tools::undoc for R; line/branch coverage from the project's own CI coverage tooling.",
+    "Before/after pairs are stored in each contribution's gate/provenance artifact and in a consolidated summary document.",
+    "The summary document is committed and verifiable against the M2 success metric ('measurably improved doc/test coverage for at least 3 tools').",
+    "Technical reviewer sign-off obtained confirming the measurements are from the tool's own CI coverage tooling and reflect real changes."
+  ],
+  "resources": [
+    "PLAN.md — Quantifying improved coverage section",
+    "PLAN.md — Success metrics table",
+    "TASKS.md — coverage-017 acceptance criteria",
+    "Outcome artifacts from contrib-011, contrib-012, contrib-016",
+    "interrogate documentation; pydocstyle; coverage.py; covr (R); roxygen2"
+  ],
+  "output": "A committed summary document recording doc-completeness and test-coverage before/after deltas for at least three tools, fulfilling the M2 Definition of Done coverage measurement requirement.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

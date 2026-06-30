@@ -1,0 +1,34 @@
+{
+  "id": "onco-research-software-docs-contrib-011",
+  "title": "Contribution #2 — docstring/API docs for a permissive genomics tool",
+  "project": "onco-research-software-docs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "genomics"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "With the pilot (pilot-007) proving the end-to-end pipeline, this contribution extends the pattern to a second permissive genomics tool that has passed the gate (triage-009). Docstring and API documentation gaps are a primary barrier for newcomers to cancer genomics tools: missing parameter descriptions, no return-type annotations, and undocumented edge cases lead to incorrect usage and irreproducible analyses. The target tool must already have a PASS gate artifact from triage-009. riskTier is low: developer-facing docs on a permissive tool using shipped/synthetic data with no biological claims requiring domain review.",
+  "objective": "Author and contribute merged docstring/API documentation for a permissive genomics tool that has passed the gate, following the templates and canonical contribution model, with coverage delta recorded.",
+  "acceptanceCriteria": [
+    "Target tool has a PASS gate artifact from triage-009 confirming OSI-permissive license, acceptable contribution policy (DCO preferred), passing for-profit-vehicle check, and cancer-data guardrail clearance.",
+    "Issue-first alignment confirmed with the maintainer before authoring.",
+    "Docstring/API docs authored following the docstring template (template-003), covering all public API surfaces in scope.",
+    "Coverage delta (doc-completeness before and after, using interrogate/pydocstyle for Python or roxygen/tools::undoc for R) recorded in the gate/provenance artifact.",
+    "License + Data-provenance reviewer sign-off and Technical reviewer sign-off obtained.",
+    "Contribution merged upstream; outcome artifact committed at outcomes/onco-research-software-docs-contrib-011.json with merge-commit URL and coverage before/after."
+  ],
+  "resources": [
+    "PLAN.md — Per-contribution pipeline",
+    "TASKS.md — contrib-011 task definition",
+    "Gate artifacts from triage-009",
+    "Templates (template-003 output)",
+    "PLAN.md — Quantifying improved coverage section"
+  ],
+  "output": "Docstring/API documentation contribution merged upstream for a gate-passed permissive genomics tool, with coverage delta and outcome artifact recorded.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false
+}

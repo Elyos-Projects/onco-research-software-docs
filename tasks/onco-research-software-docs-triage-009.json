@@ -1,0 +1,34 @@
+{
+  "id": "onco-research-software-docs-triage-009",
+  "title": "Triage 5 catalog tools through the gate",
+  "project": "onco-research-software-docs",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "governance"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The candidate-software catalog (catalog-005) provides a pool of tools to evaluate. Before any contribution can begin for a given tool, it must pass the gate (gate-002). This triage task runs five catalog tools through both gate axes — software license + contribution policy, and cancer-data guardrail — and produces a committed PASS/FLAG/EXCLUDE artifact for each, confirming which tools are ready for M1 contributions. riskTier is medium because evaluating data-handling for some tools (Priority B/C with external datasets or COSMIC/OncoKB adjacency) requires nuanced licence/de-identification judgment.",
+  "objective": "Apply gate-002 to five tools from the candidate-software catalog, producing a committed PASS/FLAG/EXCLUDE artifact for each, identifying which tools are approved for M1 contribution tasks (contrib-011, contrib-012, contrib-013).",
+  "acceptanceCriteria": [
+    "Five tools from the catalog are evaluated, each with a committed gate artifact covering both axes: PASS/FLAG/EXCLUDE status + rationale for the software axis (license, contribution policy, for-profit-vehicle check) and the cancer-data guardrail axis (data-minimization disposition, COSMIC/OncoKB rule, de-identification status).",
+    "Each PASS record documents: license id/URL, contribution policy (CLA/DCO), maintenance status, and the data-minimization disposition (shipped/synthetic/open-access).",
+    "Any non-OSI, broad-CLA, open-core, or non-redistributable-data case is FLAGGED or EXCLUDED with the specific concern surfaced and the COSMIC/OncoKB 'never embed' rule explicitly applied where relevant.",
+    "The five committed artifacts are the direct inputs for selecting tools in contrib-011, contrib-012, and contrib-013.",
+    "License+Data reviewer sign-off obtained on all five gate artifacts."
+  ],
+  "resources": [
+    "PLAN.md — Data, licensing & compliance (Axis 1 and Axis 2)",
+    "TASKS.md — triage-009 acceptance criteria",
+    "Candidate-software catalog (catalog-005 output)",
+    "Gate artifact schema (gate-002 output)",
+    "SPDX license list; OSI-approved license list; COSMIC/OncoKB terms"
+  ],
+  "output": "Five committed gate artifacts (PASS/FLAG/EXCLUDE with full rationale) for five catalog tools, identifying the approved targets for M1 contribution tasks.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

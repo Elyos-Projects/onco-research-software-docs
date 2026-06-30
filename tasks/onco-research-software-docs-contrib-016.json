@@ -1,0 +1,35 @@
+{
+  "id": "onco-research-software-docs-contrib-016",
+  "title": "Contribution #6 — single-cell toolkit docs + doctests",
+  "project": "onco-research-software-docs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "single-cell-analysis"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Single-cell RNA-seq tools (e.g. Scanpy, Seurat) are central to modern cancer research but have large, complex APIs with significant documentation gaps. Doctests that run as part of CI are particularly valuable because they double as both documentation and regression tests. riskTier is low: the contribution is developer/researcher-facing, uses the tool's shipped PBMC-style example data (no external cancer patient data), and avoids biological claims that would require domain review. Depends on harness-014 (single-cell ecosystem support) and triage-009 (gate-passed single-cell toolkit).",
+  "objective": "Author and contribute merged API documentation and doctests for a gate-passed single-cell toolkit, using the tool's shipped example data, with CI executing the doctests and coverage delta recorded.",
+  "acceptanceCriteria": [
+    "Target toolkit has a PASS gate artifact from triage-009 confirming OSI-permissive or copyleft license, acceptable contribution policy, and cancer-data guardrail clearance (shipped example data such as PBMC-style data).",
+    "Issue-first alignment confirmed with the maintainer before authoring.",
+    "API documentation and doctests authored following the templates (template-003), covering the targeted API surfaces; no behavioral changes made.",
+    "Doctests execute within CI from the pinned environment (harness-014); reproEnv.ciRunRef recorded.",
+    "Coverage delta (doc-completeness before and after) recorded in the gate/provenance artifact.",
+    "License + Data-provenance reviewer sign-off and Technical reviewer sign-off obtained.",
+    "Contribution merged upstream; outcome artifact committed at outcomes/onco-research-software-docs-contrib-016.json with merge-commit URL and coverage before/after."
+  ],
+  "resources": [
+    "PLAN.md — Per-contribution pipeline",
+    "TASKS.md — contrib-016 task definition",
+    "Gate artifacts from triage-009",
+    "Templates (template-003 output)",
+    "Generalized repro harness (harness-014 output)"
+  ],
+  "output": "API documentation and doctests merged upstream for a gate-passed single-cell toolkit, with CI executing doctests, coverage delta recorded, and outcome artifact committed — extending project coverage into the single-cell ecosystem.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false
+}

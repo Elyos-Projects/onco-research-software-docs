@@ -1,0 +1,33 @@
+{
+  "id": "onco-research-software-docs-partner-010",
+  "title": "Secure first confirmed upstream maintainer partner",
+  "project": "onco-research-software-docs",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "governance"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The project's 'delivered, not merged' bar requires at least one named upstream maintainer who will actively review and accept contributions. The pilot (pilot-007) demonstrates the flow works, but a confirmed partner relationship — where the maintainer has explicitly agreed to review further contributions — is what enables sustainable throughput in M1 and beyond. Depends on outreach-006 (which opened the initial threads); this task converts the best thread into a confirmed partnership.",
+  "objective": "Secure a named upstream maintainer who confirms they will review and accept contributions for their tool, document the contribution mechanism, and update the affected tasks to verifiedNeed: true with the requestor set.",
+  "acceptanceCriteria": [
+    "A named upstream maintainer confirms (via issue thread, email, or direct communication) that they will review and accept contributions for a specific tool.",
+    "The contribution mechanism is documented: PR flow, DCO/CLA requirement, contributing guide URL, CI expectations.",
+    "The confirmed partnership is recorded as a committed document with the maintainer's name, tool, confirmation URL/reference, and contribution mechanism.",
+    "All tasks targeting that tool are updated to verifiedNeed: true with the requestor field set to the maintainer's name or GitHub handle.",
+    "The confirmed partner relationship becomes the primary liaison point for the Steward for M1 and M2 contributions to that tool."
+  ],
+  "resources": [
+    "PLAN.md — Governance, roles & stakeholders (Partner/requestor section)",
+    "TASKS.md — partner-010 acceptance criteria",
+    "Outreach threads (outreach-006 output)",
+    "Pilot outcome artifact (pilot-007 output)"
+  ],
+  "output": "A committed record of the first confirmed upstream maintainer partner, with contribution mechanism documented and affected tasks updated to verifiedNeed: true, enabling M1 contributions to proceed with a confirmed acceptance path.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

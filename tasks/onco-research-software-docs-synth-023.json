@@ -1,0 +1,34 @@
+{
+  "id": "onco-research-software-docs-synth-023",
+  "title": "Shared license-clean synthetic cancer fixtures",
+  "project": "onco-research-software-docs",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "reproducibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Each tutorial currently generates or borrows small synthetic data independently, leading to duplication of effort and inconsistent data quality. A shared, license-clean synthetic cancer fixture set — coordinated with the synthetic-cancer-data portfolio project — reduces the data-licensing surface for every future tutorial and makes fixture quality a shared responsibility rather than a per-tutorial ad-hoc decision. Fixtures are generated (not derived from real patient data), small, and unambiguously license-clean. This is Elyos-side tooling.",
+  "objective": "Build and commit a shared set of license-clean synthetic cancer data fixtures (MAF, expression matrix, survival table, image patch, etc.) usable across tutorials for genomics, survival-analysis, and imaging contributions, coordinated with the synthetic-cancer-data portfolio project.",
+  "acceptanceCriteria": [
+    "At least three fixture types are produced covering the ecosystems used in prior contributions: e.g., a small synthetic MAF file (genomics), a synthetic survival/censoring table (survival-analysis), and a synthetic image patch or feature matrix (imaging).",
+    "All fixtures are synthetically generated — no derived from real patient data; the generation script is committed so fixtures can be reproduced.",
+    "Fixtures are documented with: generation method, intended use cases, and an explicit 'no real patient data' statement.",
+    "Fixtures are MIT or CC0-licensed (unambiguously license-clean for redistribution).",
+    "Coordination with the synthetic-cancer-data portfolio project is documented (any shared decisions or handoffs noted).",
+    "Code is MIT-licensed; pnpm build && pnpm test && pnpm lint are green; DCO signed-off."
+  ],
+  "resources": [
+    "TASKS.md — synth-023 task definition",
+    "PLAN.md — Data-minimization priority order (synthetic data tier)",
+    "synthetic-cancer-data portfolio project (for coordination)",
+    "PLAN.md — Open questions (synthetic fixtures question)"
+  ],
+  "output": "A committed set of shared MIT/CC0-licensed synthetic cancer data fixtures covering at least three fixture types, with generation scripts and documentation, reducing data-licensing surface for all future tutorial contributions.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

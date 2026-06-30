@@ -1,0 +1,34 @@
+{
+  "id": "onco-research-software-docs-trouble-024",
+  "title": "Troubleshooting/error-message docs for a high-traffic tool",
+  "project": "onco-research-software-docs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "reproducibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "High-traffic cancer research tools often have issues trackers full of repeated 'how do I fix error X' questions that a well-written troubleshooting or error-message documentation section would resolve. This cuts the maintainer's support burden and helps new users get unstuck faster. riskTier is low: troubleshooting docs are developer/researcher-facing, do not include biological claims, and do not require external data. The target tool must have a PASS gate artifact.",
+  "objective": "Author and contribute merged troubleshooting or error-message documentation for a high-traffic, gate-passed cancer research tool, addressing the most common user-facing errors documented in the tool's issue tracker.",
+  "acceptanceCriteria": [
+    "Target tool has a PASS gate artifact confirming OSI-permissive or copyleft license and acceptable contribution policy.",
+    "Issue-first alignment confirmed with the maintainer; the specific error messages or FAQ entries are confirmed as wanted.",
+    "Troubleshooting docs authored following the templates (template-003); each entry links to the relevant issue or code path for context.",
+    "No behavioral changes; no biological/clinical claims; no patient data.",
+    "License + Data-provenance reviewer sign-off and Technical reviewer sign-off obtained.",
+    "Contribution merged upstream; outcome artifact committed at outcomes/onco-research-software-docs-trouble-024.json with merge-commit URL."
+  ],
+  "resources": [
+    "TASKS.md — trouble-024 task definition",
+    "PLAN.md — Per-contribution pipeline",
+    "Gate artifacts from triage-009 or a new gate assessment for the target tool",
+    "Templates (template-003 output)",
+    "Target tool's issue tracker (common error patterns)"
+  ],
+  "output": "Troubleshooting/error-message documentation merged upstream for a high-traffic gate-passed cancer research tool, with outcome artifact recorded — cutting maintainer support burden and helping new users get unstuck.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false
+}

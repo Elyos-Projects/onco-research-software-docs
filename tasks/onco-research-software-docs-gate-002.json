@@ -1,0 +1,34 @@
+{
+  "id": "onco-research-software-docs-gate-002",
+  "title": "Contribution + cancer-data guardrail gate (license, open-access data, no-advice)",
+  "project": "onco-research-software-docs",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "governance"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Every contribution this project makes to upstream open-source cancer research software must pass a two-axis gate: (1) the software axis — confirming the tool's license is OSI-approved, the contribution policy (CLA/DCO) is acceptable, and a for-profit-vehicle check passes; and (2) the cancer-data guardrail axis — confirming any example/fixture/tutorial data is open-access/aggregate/de-identified with a verified license, that COSMIC/OncoKB content is never embedded, and that the contribution is researcher/developer-facing with no medical advice. The gate must be non-skippable, auditable, and produce a committed artifact per contribution.",
+  "objective": "Design and publish the contribution gate as a committed, reviewable checklist/artifact schema covering both axes — software license + contribution policy, and cancer-data guardrail — and a no-advice check, so that every future contribution has a verifiable, committed PASS/FLAG/EXCLUDE record.",
+  "acceptanceCriteria": [
+    "The software axis is documented: PASS only if the tool's license is OSI-approved and permits the contribution, the contribution policy (CLA/DCO, contributing guide) is recorded and acceptable (broad CLAs escalated to governance), and the for-profit-vehicle check passes.",
+    "The cancer-data guardrail axis is documented and binding: example/fixture/tutorial data must be open-access/aggregate/de-identified with a verified license; controlled-access (dbGaP/EGA/controlled-tier GDC) and identifiable data are EXCLUDED; COSMIC/OncoKB content is never embedded (document-by-reference only); data-minimization priority order is recorded (shipped over synthetic over open-access).",
+    "The no-advice check is documented: confirms the contribution is developer/researcher-facing and contains no medical advice or clinical interpretation; the 'not medical advice' disclaimer is required on tutorials.",
+    "The gate produces a committed, reviewable PASS/FLAG/EXCLUDE artifact per contribution recording which checks ran and what fired (both axes + provenance + de-identification disposition).",
+    "The gate artifact schema is published and used for the pilot contribution (pilot-007)."
+  ],
+  "resources": [
+    "PLAN.md — Data, licensing & compliance section (Axis 1 and Axis 2)",
+    "TASKS.md — gate-002 acceptance criteria",
+    "SPDX license list; OSI-approved license list",
+    "GDC open vs. controlled tier documentation",
+    "COSMIC license (non-commercial); OncoKB terms of use"
+  ],
+  "output": "A committed gate artifact schema/checklist covering both licensing axes plus the cancer-data guardrail and no-advice check, with a completed example artifact for the pilot contribution, unblocking all downstream contribution tasks.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
