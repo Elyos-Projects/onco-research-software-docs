@@ -1,0 +1,38 @@
+{
+  "id": "onco-research-software-docs-pilot-007",
+  "title": "Pilot contribution end-to-end, merged upstream",
+  "project": "onco-research-software-docs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "reproducibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The M0 pilot is the first end-to-end contribution that proves the full pipeline works: gate check, issue-first alignment, authoring against templates, reproducible environment pinning, License+Data review, Technical review, and upstream merge with an outcome artifact recorded. The pilot is deliberately chosen to maximize merge probability: an OSI-permissive (MIT/BSD/Apache) tool, actively maintained, DCO-only (no broad CLA), maintainer-labelled gap, and needing only shipped or synthetic data so it stays riskTier low and requires no Domain reviewer. Depends on all M0 foundation tasks: reviewer-001 (blocking reviewer filled), gate-002, template-003, repro-004, catalog-005, and outreach-006.",
+  "objective": "Execute one complete contribution end-to-end — from gate check through to upstream merge — for a Priority A tool, following all templates and the canonical contribution model, with the outcome artifact recorded at outcomes/onco-research-software-docs-pilot-007.json.",
+  "acceptanceCriteria": [
+    "Target tool selected with a realistic merge path: OSI-permissive (MIT/BSD/Apache), actively maintained, DCO (not broad-CLA), with a maintainer-labelled 'good first issue' or 'docs/tests wanted' gap, needing only shipped or synthetic data.",
+    "Gate-002 (both axes) passed with the artifact committed before any authoring begins.",
+    "Issue-first alignment confirmed with the maintainer before authoring, referencing the outreach-006 shortlist.",
+    "The docs/tests/tutorial follows the templates (template-003); any tutorial runs reproducibly in CI from the pinned environment (reproEnv.ciRunRef recorded); provenance/citations present.",
+    "License + Data-provenance reviewer (reviewer-001) sign-off obtained.",
+    "Technical reviewer sign-off obtained.",
+    "The contribution is merged upstream — or, if not merged, submitted with the specific blocker surfaced and documented.",
+    "Outcome artifact committed at outcomes/onco-research-software-docs-pilot-007.json recording merge-commit URL (or submission URL + blocker) and coverage before/after."
+  ],
+  "resources": [
+    "PLAN.md — Per-contribution pipeline (all steps)",
+    "PLAN.md — Cold-start de-risking (pilot selection criteria)",
+    "TASKS.md — pilot-007 acceptance criteria",
+    "Outreach shortlist (outreach-006 output)",
+    "Gate artifact schema (gate-002 output)",
+    "Templates (template-003 output)",
+    "Reproducible-environment harness (repro-004 output)"
+  ],
+  "output": "A contribution merged upstream (or submitted with blocker surfaced) for a Priority A open-source cancer research tool, with the gate artifact, provenance, and outcome record committed — proving the full M0 pipeline works end-to-end.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false
+}

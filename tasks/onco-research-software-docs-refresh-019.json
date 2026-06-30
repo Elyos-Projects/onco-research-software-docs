@@ -1,0 +1,34 @@
+{
+  "id": "onco-research-software-docs-refresh-019",
+  "title": "Anti-bit-rot refresh process + drift detection",
+  "project": "onco-research-software-docs",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "reproducibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Tutorials that pin a tool version become broken when the tool releases a new version — this is among the highest-likelihood risks listed in PLAN.md. Without an explicit, documented refresh cadence and a CI mechanism to detect drift, broken tutorials silently mislead users and erode trust in the project's reproducibility claims. Depends on harness-014 (which provides the CI harness that detects breakage) and the body of delivered M1/M2 tutorials.",
+  "objective": "Document and implement an anti-bit-rot refresh process: a cadenced procedure for re-running delivered tutorials against new tool releases, a CI mechanism that flags breakage, and a rule that breakages become explicit maintenance tasks.",
+  "acceptanceCriteria": [
+    "A documented refresh cadence specifies how often delivered tutorials are re-run against new upstream tool releases (e.g., monthly or on upstream release).",
+    "The CI harness (harness-014) is configured to flag breakage when a delivered tutorial fails against the latest tool release.",
+    "A rule is documented and committed: each breakage detected becomes an explicit maintenance task in the project backlog with its own ID.",
+    "Lockfile update procedure is documented: lockfiles are updated deliberately with a record of what changed and why, not automatically.",
+    "A Steward or Maintainer is identified as the owner of the refresh cadence.",
+    "The process is committed as a document and is reviewed and confirmed by the Maintainer."
+  ],
+  "resources": [
+    "PLAN.md — Sustainability & maintenance section",
+    "PLAN.md — Risks & mitigations (Tutorial bit-rots row)",
+    "TASKS.md — refresh-019 acceptance criteria",
+    "Generalized repro harness (harness-014 output)"
+  ],
+  "output": "A committed anti-bit-rot refresh process document and CI configuration that detects tutorial drift, with a documented cadence and breakage-to-task escalation rule, ensuring delivered tutorials remain runnable as tools release new versions.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "onco-research-software-docs-contrib-012",
+  "title": "Contribution #3 — tests for a permissive survival-analysis library",
+  "project": "onco-research-software-docs",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "survival-analysis"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Survival-analysis libraries are widely used in cancer research but often have thin test coverage on critical code paths — edge cases in censoring, stratification, and log-rank statistics. A missed edge case leads to incorrect survival estimates that downstream analyses quietly inherit. This contribution adds meaningful tests using the library's shipped or small synthetic data (no patient data, no external datasets), keeping riskTier low and avoiding data-licensing complexity. Depends on pilot-007 (pattern proven) and triage-009 + repro-004 (gate-passed target + reproducible harness).",
+  "objective": "Author and contribute merged unit/regression tests for a gate-passed permissive survival-analysis library, using shipped or synthetic data, with test-coverage delta recorded.",
+  "acceptanceCriteria": [
+    "Target library has a PASS gate artifact from triage-009 confirming OSI-permissive license, acceptable contribution policy, and cancer-data guardrail clearance (shipped/synthetic data only).",
+    "Issue-first alignment confirmed with the maintainer before authoring.",
+    "Tests authored following the test template (template-003), covering at least one previously untested or under-tested code path; no behavioral changes made (bug reports filed as issues upstream if found).",
+    "Tests run in the reproducible-environment harness (repro-004) end-to-end on shipped/synthetic data; CI green with reproEnv.ciRunRef recorded.",
+    "Test-coverage delta (line/branch coverage on the touched module, before and after, from the project's own CI coverage tooling) recorded in the gate/provenance artifact.",
+    "License + Data-provenance reviewer sign-off and Technical reviewer sign-off obtained.",
+    "Contribution merged upstream; outcome artifact committed at outcomes/onco-research-software-docs-contrib-012.json with merge-commit URL and coverage before/after."
+  ],
+  "resources": [
+    "PLAN.md — Per-contribution pipeline",
+    "TASKS.md — contrib-012 task definition",
+    "Gate artifacts from triage-009",
+    "Templates (template-003 output)",
+    "Reproducible-environment harness (repro-004 output)",
+    "PLAN.md — Quantifying improved coverage section"
+  ],
+  "output": "Test contribution merged upstream for a gate-passed permissive survival-analysis library, with coverage delta and outcome artifact recorded.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false
+}

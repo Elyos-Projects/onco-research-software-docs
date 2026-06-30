@@ -1,0 +1,34 @@
+{
+  "id": "onco-research-software-docs-harness-014",
+  "title": "Generalize the repro harness across 3 or more ecosystems",
+  "project": "onco-research-software-docs",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "reproducibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The M0 reproducible-environment harness (repro-004) was built for one ecosystem. M2 requires the harness to work across at least three ecosystems (e.g., Python/conda, R/renv, and a container-based tool) to enable imaging and single-cell contributions that use different toolchains. Scaling contributions across genomics, imaging, and survival-stats requires a single generalized harness that any contributor can extend with a documented 'add a new tool' path. Depends on repro-004.",
+  "objective": "Extend the reproducible-environment harness to support at least three distinct ecosystems (e.g., Python/conda-lock, R/renv, and a container-based tool), each running a tutorial or test end-to-end in CI from its lockfile, with a documented path for adding new tools.",
+  "acceptanceCriteria": [
+    "The harness runs reproducibly in CI for at least three ecosystems: e.g., Python/conda-lock or pixi, R/renv, and a container/Docker-based tool, each executing a tutorial or test end-to-end from its lockfile.",
+    "A documented 'add a new tool' path is committed, enabling contributors to plug in a new ecosystem lockfile without modifying the core harness.",
+    "Code is MIT-licensed; CI is green for all three ecosystems; pnpm build && pnpm test && pnpm lint pass for any Elyos-side tooling.",
+    "DCO signed-off commit.",
+    "The generalized harness is the direct dependency for contrib-015 (imaging tutorial) and contrib-016 (single-cell docs + doctests)."
+  ],
+  "resources": [
+    "PLAN.md — Reproducible-environment harness section",
+    "TASKS.md — harness-014 acceptance criteria",
+    "Existing repro harness (repro-004 output)",
+    "conda-lock/pixi documentation; renv documentation; Docker/OCI container documentation",
+    "GitHub Actions matrix build documentation"
+  ],
+  "output": "A generalized MIT-licensed reproducible-environment harness supporting at least three ecosystems, with CI green across all and a documented extension path, enabling M2 contributions across genomics, imaging, and survival-stats toolchains.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

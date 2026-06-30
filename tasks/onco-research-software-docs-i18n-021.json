@@ -1,0 +1,36 @@
+{
+  "id": "onco-research-software-docs-i18n-021",
+  "title": "Translate a delivered tutorial (domain + language reviewer)",
+  "project": "onco-research-software-docs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "reproducibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Translating a delivered tutorial into another language widens its reuse and benefits researchers who are more comfortable in a language other than English — a significant consideration in the global cancer research community. riskTier is medium because translating biological/clinical claims and the 'not medical advice' disclaimer requires both a domain reviewer (to confirm the scientific accuracy of the translation) and a language reviewer (a fluent native speaker in the target language). The source tutorial must already be delivered, reproducible in CI, and carry all mandatory elements.",
+  "objective": "Translate one delivered tutorial into a target language, with a language reviewer (native-fluent) and a domain reviewer (verifies biological/clinical accuracy of the translated text) signing off, and the 'not medical advice' disclaimer accurately rendered in the target language.",
+  "acceptanceCriteria": [
+    "Source tutorial is a fully delivered, CI-green, domain-reviewed English tutorial from the project's prior contributions.",
+    "Translation is produced by a contributor fluent in the target language, or with native-language review.",
+    "A domain reviewer (bioinformatician or oncologist as appropriate) confirms biological/clinical claims are accurately conveyed in the translation.",
+    "The 'research/education use — not medical advice' disclaimer is translated and prominent in the target language.",
+    "All data-provenance attributions and citation references are preserved accurately in the translation.",
+    "Language reviewer (native or near-native speaker of the target language) sign-off obtained.",
+    "Domain reviewer sign-off obtained.",
+    "Translation is committed and accessible for distribution, with the source tutorial referenced."
+  ],
+  "resources": [
+    "TASKS.md — i18n-021 task definition",
+    "Source tutorial (delivered M1/M2 contribution output)",
+    "PLAN.md — Data, licensing & compliance (no-advice check)",
+    "Templates (template-003 output — disclaimer language)"
+  ],
+  "output": "A delivered tutorial translated into at least one additional language, with domain and language reviewer sign-offs, accurate 'not medical advice' disclaimer, and all provenance/citations preserved — widening the tutorial's reuse to non-English-speaking cancer researchers.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

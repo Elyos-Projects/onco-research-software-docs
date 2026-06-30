@@ -1,0 +1,35 @@
+{
+  "id": "onco-research-software-docs-catalog-005",
+  "title": "Seed + triage the candidate-software catalog",
+  "project": "onco-research-software-docs",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "governance"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The project needs a pipeline of candidate tools to contribute to. Without a seeded and triaged catalog, throughput depends on ad-hoc selection and the gate cannot be applied systematically. The catalog must be license-classified (Priority A/B/C) and must flag data-handling concerns (COSMIC/OncoKB, controlled-access data) upfront so contributors can pick tools likely to pass the gate. Depends on gate-002 so the classification rules are locked before the catalog is finalized. riskTier is medium because determining the correct license classification and data-handling disposition for some tools (Priority C, COSMIC/OncoKB-adjacent) requires nuanced licence/de-identification judgment.",
+  "objective": "Seed the candidate-software catalog with at least 10 entries license-classified as Priority A/B/C, with first-pass triage signals (license, ecosystem, maintenance status, data disposition, COSMIC/OncoKB flag), providing a transparent pipeline of contribution targets.",
+  "acceptanceCriteria": [
+    "At least 10 candidate tools are catalogued with: tool name, ecosystem, license string (marked as indicative — to be re-verified at gate), priority (A/B/C), and a notes column covering the data disposition and any COSMIC/OncoKB or for-profit-vehicle concern.",
+    "Priority A tools are clearly OSI-permissive (MIT/BSD/Apache) and work on shipped or synthetic data with minimal data-licensing surface.",
+    "Priority B tools are noted as copyleft (GPL/LGPL/AGPL/MPL) or requiring an external open-access dataset to be verified at the gate.",
+    "Priority C tools with COSMIC/OncoKB dependencies or open-core concerns are flagged with 'verify/never embed; document-by-reference only'.",
+    "The catalog explicitly states that no tool becomes an active contribution task until it passes gate-002 via the triage task (triage-009).",
+    "The catalog is committed as a document and is the direct input for triage-009."
+  ],
+  "resources": [
+    "TASKS.md — Candidate-software catalog (seed) section",
+    "PLAN.md — Scaling via the catalog",
+    "SPDX license list; OSI-approved license list",
+    "Bioconductor package index; PyPI; CRAN; nf-core pipelines listing",
+    "COSMIC license (non-commercial); OncoKB terms of use"
+  ],
+  "output": "A committed candidate-software catalog with at least 10 license-classified entries (A/B/C priority), providing a transparent and honestly-triaged pipeline of candidate contribution targets for triage-009 and subsequent milestones.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

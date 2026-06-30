@@ -1,0 +1,34 @@
+{
+  "id": "onco-research-software-docs-contribguide-025",
+  "title": "Contributor-onboarding docs for an under-documented tool",
+  "project": "onco-research-software-docs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "governance"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Many open-source cancer research tools lack a clear CONTRIBUTING.md or contributor-onboarding guide, which creates a high barrier for new contributors and drives maintainer burnout from answering repeated 'how do I contribute?' questions. Contributor-onboarding docs directly help the maintainer community grow and reduce the maintainer support burden — a direct benefit to the ecosystem. riskTier is low: onboarding docs are developer-facing, contain no biological claims, and require no cancer data.",
+  "objective": "Author and contribute merged contributor-onboarding documentation for a gate-passed under-documented cancer research tool, covering the development setup, contribution workflow, DCO/CLA requirements, test-run instructions, and code-of-conduct reference.",
+  "acceptanceCriteria": [
+    "Target tool has a PASS gate artifact confirming OSI-permissive or copyleft license and acceptable contribution policy.",
+    "Issue-first alignment confirmed with the maintainer; the onboarding docs gap is confirmed as wanted.",
+    "Contributor-onboarding docs cover: development environment setup, contribution workflow (fork/branch/PR), DCO or CLA requirement, how to run tests, and code-of-conduct reference.",
+    "No biological/clinical claims; no patient data; developer-facing only.",
+    "License + Data-provenance reviewer sign-off and Technical reviewer sign-off obtained.",
+    "Contribution merged upstream; outcome artifact committed at outcomes/onco-research-software-docs-contribguide-025.json with merge-commit URL."
+  ],
+  "resources": [
+    "TASKS.md — contribguide-025 task definition",
+    "PLAN.md — Per-contribution pipeline",
+    "Gate artifacts from triage-009 or a new gate assessment for the target tool",
+    "Templates (template-003 output)",
+    "Developer Certificate of Origin (DCO) documentation"
+  ],
+  "output": "Contributor-onboarding documentation merged upstream for a gate-passed under-documented cancer research tool, with outcome artifact recorded — helping the maintainer community grow and reducing maintainer support burden.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false
+}

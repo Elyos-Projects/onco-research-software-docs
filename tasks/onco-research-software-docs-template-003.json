@@ -1,0 +1,32 @@
+{
+  "id": "onco-research-software-docs-template-003",
+  "title": "Doc/test/tutorial templates + canonical contribution model",
+  "project": "onco-research-software-docs",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-source", "bioinformatics", "reproducibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Every contribution this project makes needs to follow a consistent structure so that it is reproducible, correctly attributed, legally compliant, and acceptable to upstream maintainers. Without templates and a canonical contribution model, each contributor risks missing mandatory elements: data-provenance header, 'not medical advice' disclaimer, citation format, environment-pin approach, and DCO sign-off guidance.",
+  "objective": "Publish doc/test/tutorial templates and a canonical contribution model that every contributor reuses, covering the mandatory elements: data-provenance and license header, 'research/education use — not medical advice' disclaimer, citation format for biological/clinical assertions, pinned-environment block, and DCO sign-off guidance.",
+  "acceptanceCriteria": [
+    "A docstring template for Python and R is published covering required fields: description, parameters, returns, example, and a data-provenance note where applicable.",
+    "A tutorial template is published with mandatory sections: data-provenance and license header, 'research/education use — not medical advice' disclaimer, pinned environment block, citations section, and a reproduction-instructions block.",
+    "A test template is published covering fixture/data provenance, assertion style, and the CI run reference.",
+    "A canonical contribution model document is published defining fields for each contribution (id, targetTool, contributionType, gap, exampleData, claims, disclaimerIncluded, reproEnv, review, acceptance, coverage) as specified in PLAN.md.",
+    "Templates are committed and referenced from the project contributing guide so contributors can immediately use them for the pilot (pilot-007) and subsequent contributions."
+  ],
+  "resources": [
+    "PLAN.md — Solution approach & architecture (Canonical contribution model section)",
+    "PLAN.md — Data, licensing & compliance",
+    "TASKS.md — template-003 task definition"
+  ],
+  "output": "Committed doc/test/tutorial templates and a canonical contribution model document, ready for immediate reuse by pilot-007 and all subsequent contributions.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
